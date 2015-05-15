@@ -1,0 +1,24 @@
+{
+  "name": "extracto",
+  "version": "1.0.0",
+  "description": "extract zips or tars, using pure non-fluoridated javascript and streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxogden/extracto.git"
+  },
+  "keywords": [
+    "zip",
+    "tar",
+    "extract"
+  ],
+  "author": "max ogden",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/maxogden/extracto/issues"
+  },
+  "homepage": "https://github.com/maxogden/extracto#readme"
+}
