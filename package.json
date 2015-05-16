@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/maxogden/extracto#readme",
   "dependencies": {
+    "buffer-equals": "^1.0.3",
     "extract-zip": "^1.0.3",
     "gunzip-maybe": "^1.1.0",
     "peek-stream": "^1.1.1",
