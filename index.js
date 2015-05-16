@@ -1,13 +1,20 @@
+var fs = require('fs') // only used in node TODO dont always require
 var tar = require('tar-fs')
 var zip = require('extract-zip')
 var gunzip = require('gunzip-maybe')
-var through = require('through2')
 var peek = require('peek-stream')
 var pump = require('pump')
 var detect = require('./detect.js')
  
-module.exports = function (opts) {
-  return detectFormat()
+module.exports = function (file, opts, cb) {
+  if (typeof opts === 'function') {
+    cb = opts
+    opts = undefined
+  }
+  
+  if (!file) return cb(new Error('Must specify file'))
+  
+  if (typeof file === 'string')
 }
 
 function detectFormat () {
@@ -30,4 +37,8 @@ var parsers = {
   targz: function targz () {
     console.log('TARGZ')
   }
+}
+
+function createFileReader (file) {
+  
 }

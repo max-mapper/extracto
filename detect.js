@@ -1,4 +1,5 @@
 var bufferEquals = require("buffer-equals")
+
 var magicNumbers = {
   zip: new Buffer("504B0304", "hex"),
   tar: new Buffer("7573746172", "hex"),
